@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--STUDENT REGISTRATION-->
+    <TextView
+        android:id="@+id/txtStudentRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/student_registration"
+        />
+    <!--FIRST NAME-->
+    <TextView
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStudentRegistration"
+        android:layout_marginTop="10dp"
+        android:text="@string/first_name" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStudentRegistration"
+        android:layout_toEndOf="@+id/txtFirstName"
+        android:layout_alignParentEnd="true"
+        android:autofillHints=""
+        android:hint="@string/enter_your_first_name"
+        android:inputType="text"
+     />
+
+
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLastName"
+        android:layout_toEndOf="@+id/txtLastName"
+        android:layout_alignParentEnd="true"
+        android:autofillHints=""
+        android:hint="@string/enter_your_first_name"
+        android:inputType="text"
+        />
+
+
+    <!--LAST NAME-->
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_marginTop="10dp"
+        android:text="@string/last_name" />
+
+    <!--PHONE #-->
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLastName"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone" />
+
+
+
+</RelativeLayout>
